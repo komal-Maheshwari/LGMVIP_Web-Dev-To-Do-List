@@ -1,0 +1,148 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: auto;
+    margin: 2%;
+    padding: 10px;
+    background-image: linear-gradient(to right, rgb(108, 177, 204) , pink);
+}
+
+.container{
+    width: 50%;
+    margin: 1%;
+    margin-left: 22%;
+    position: fixed;
+    min-width: 450px;
+    box-shadow: 0px 0px 50px 10px rgba(153,153,153,1);
+    background-image: linear-gradient(to right, pink , skyblue);
+	border-radius: 10px;
+    border-style: double;
+    border-color: rgb(200, 138, 148);
+}
+
+h1{
+    height: 20%;
+    font-size: 3em; 
+    font-style: italic;
+    margin: 1%;
+    color: rgb(182, 77, 129);
+}
+
+h1 small{
+    font-size: 30px;
+}
+
+h2{
+    margin: 1%;
+    color: darkslategrey;
+    text-align: center;
+    font-size: 30px;
+}
+
+h3{
+    margin: 1%;
+    text-decoration: underline dotted;
+    color: darkslategrey;
+    text-align: Left;
+    font-size: 20px;
+}
+
+#newtask{
+    position: relative;
+    padding: 30px 20px;
+}
+
+#newtask input{
+    width: 75%;
+    height: 45px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    border: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+}
+
+#newtask input:focus{
+    outline: none;
+    border-color: #0d75ec;
+}
+
+#newtask button{
+    position: relative;
+    float: right;
+    width: 23%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #509df5;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+#newtask button:hover {
+    background-color: #2b64a4;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+#tasks{
+    background-image: linear-gradient(to right, pink , skyblue);
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.task{
+    background-color: #c5e1e6;
+    height: 50px;
+		margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex;
+		border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #939697;
+    cursor: pointer;
+}
+
+.task span{
+    font-family: 'Poppins',sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.task button{
+    background-color: #0d75ec;
+    color: #ffffff;
+    height: 100%;
+    width: 60px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.task button:hover {
+    background-color: #133153;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.completed{
+    text-decoration: line-through;
+}
